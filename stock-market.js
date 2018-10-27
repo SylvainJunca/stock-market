@@ -3,9 +3,10 @@ function maxProfit(arr) {
     var bruteData = [];
     for(var i = 0; i < arr.length; i++){
         for(var j = i; j < (arr.length - 1); j++){
-          bruteData.push(arr[i+1] - arr[j]);
+          bruteData.push(arr[j+1] - arr[i]);
         }
     }
+    return bruteData;
 }
 
 
